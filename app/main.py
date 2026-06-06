@@ -8,6 +8,8 @@ Endpoints:
     POST   /quotes          -> create a quote (validated)
     DELETE /quotes/{id}     -> delete a quote
 """
+from __future__ import annotations
+
 from fastapi import FastAPI, HTTPException, Response, status
 
 from .models import Quote, QuoteIn

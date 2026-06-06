@@ -4,6 +4,8 @@ The store is intentionally simple and self-contained so the API runs with no
 external database. Each store instance keeps its own id counter so tests are
 isolated from one another.
 """
+from __future__ import annotations
+
 from threading import Lock
 
 from .models import Quote, QuoteIn
